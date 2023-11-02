@@ -1,18 +1,12 @@
 (function ($) {
     "use strict";
-    
-    /*------ ScrollUp -------- */
     $.scrollUp({
         scrollText: '<i class="icon-arrow-up"></i>',
         easingType: 'linear',
         scrollSpeed: 900,
         animation: 'fade'
     });
-    
-    /*------ Wow Active ----*/
     new WOW().init();
-    
-    /*------ Hero slider active 1 ----*/
     $('.hero-slider-active-1').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -23,8 +17,6 @@
         prevArrow: '<span class="slider-icon-1-prev"><i class="icon-arrow-left"></i></span>',
         nextArrow: '<span class="slider-icon-1-next"><i class="icon-arrow-right"></i></span>',
     });
-    
-    /*------ Hero slider active 2 ----*/
     $('.hero-slider-active-2').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -35,8 +27,6 @@
         prevArrow: '<span class="slider-icon-1-prev"><i class="icon-arrow-left"></i></span>',
         nextArrow: '<span class="slider-icon-1-next"><i class="icon-arrow-right"></i></span>',
     });
-    
-    /*------ Hero slider active 3 ----*/
     $('.hero-slider-active-3').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -45,8 +35,6 @@
         dots: true,
         arrows: false,
     });
-    
-    /*------ Product slider active ----*/
     $('.product-slider-active').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -81,8 +69,6 @@
             }
         ]
     });
-    
-    /*------ Product slider active 2 ----*/
     $('.product-slider-active-2').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -118,8 +104,6 @@
             }
         ]
     });
-    
-    /*------ Product slider active 3 ----*/
     $('.product-slider-active-3').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
@@ -156,8 +140,6 @@
             }
         ]
     });
-    
-    /*------ Product slider active 4 ----*/
     $('.product-slider-active-4').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -194,8 +176,6 @@
             }
         ]
     });
-    
-    /*------ Product slider active 5 ----*/
     $('.product-slider-active-5').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -230,8 +210,6 @@
             }
         ]
     });
-    
-    /*------ product categories slider 1 ----*/
     $('.product-categories-slider-1').slick({
         slidesToShow: 6,
         slidesToScroll: 1,
@@ -268,8 +246,6 @@
             }
         ]
     });
-    
-    /*------ Product categories slider 3 ----*/
     $('.product-categories-slider-3').slick({
         slidesToShow: 6,
         slidesToScroll: 1,
@@ -307,17 +283,7 @@
             }
         ]
     });
-    
-    
-    
-    /*--------------------------------
-        InstagramFeed active
-    -----------------------------------*/
-    
-    /*--
-    instafeed
-    -----------------------------------*/
-    // User Changeable Access
+
     var activeId = $("#instafeed"),
     limit = activeId.data("limit"),
         myTemplate = '<div class="single-instafeed"><a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a></div>';
@@ -330,9 +296,6 @@
             });
         userFeed.run();
     }
-    
-    
-    /*--- Language currency active ----*/
     $('.language-dropdown-active').on('click', function(e) {
         e.preventDefault();
         $('.language-dropdown').slideToggle(400);
@@ -341,8 +304,6 @@
         e.preventDefault();
         $('.currency-dropdown').slideToggle(400);
     });
-    
-    /*--- Countdown timer active ----*/
     $('#timer-1-active , #timer-3-active').syotimer({
         year: 2021,
         month: 10,
@@ -391,10 +352,6 @@
         });
     };
     miniCart();
-    
-    /*-------------------------------
-	   Header Search Toggle
-    -----------------------------------*/
     var searchToggle = $('.search-toggle');
     searchToggle.on('click', function(e){
         e.preventDefault();
@@ -407,22 +364,13 @@
         }
     })
     
-    
-    /* NiceSelect */
     $('.nice-select').niceSelect();
      
     
-    /*-------------------------
-      Category active
-    --------------------------*/
     $('.categori-show').on('click', function(e) {
         e.preventDefault();
         $('.categori-hide , .categori-hide-2').slideToggle(900);
     });
-    
-    /*--------------------------------
-        Deal slider active
-    -----------------------------------*/
     $('.deal-slider-active').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -434,10 +382,6 @@
         nextArrow: '<span class="slider-icon-1-next"><i class="icon-arrow-right"></i></span>',
     });
     
-    
-    /*--------------------------------
-        Sidebar product active
-    -----------------------------------*/
     $('.sidebar-product-active').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -450,9 +394,6 @@
         nextArrow: '<span class="sidebar-icon-next"><i class="icon-arrow-right"></i></span>',
     });
     
-    /*--------------------------------
-        Sidebar blog active
-    -----------------------------------*/
     $('.sidebar-blog-active').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -464,10 +405,6 @@
         prevArrow: '<span class="sidebar-icon-prev"><i class="icon-arrow-left"></i></span>',
         nextArrow: '<span class="sidebar-icon-next"><i class="icon-arrow-right"></i></span>',
     });
-    
-    /*--------------------------------
-        Product categories slider
-    -----------------------------------*/
     $('.product-categories-slider-2').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
@@ -504,10 +441,6 @@
             }
         ]
     });
-    
-    /*--------------------------------
-        Testimonial active
-    -----------------------------------*/
     $('.testimonial-active-1').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -516,9 +449,6 @@
         dots: true,
         arrows: false,
     });
-    /*--------------------------------
-        Testimonial active 2
-    -----------------------------------*/
     $('.testimonial-active-2').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -527,10 +457,6 @@
         dots: false,
         arrows: false,
     });
-    
-    /*--------------------------------
-        Product slider active 6
-    -----------------------------------*/
     $('.product-slider-active-6').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -566,10 +492,6 @@
             }
         ]
     });
-    
-    /*--------------------------------
-        Product slider active 7
-    -----------------------------------*/
     $('.product-slider-active-7').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -606,9 +528,6 @@
         ]
     });
     
-    /*--------------------------------
-        Product slider active 8
-    -----------------------------------*/
     $('.product-slider-active-8').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
@@ -646,9 +565,6 @@
         ]
     });
     
-    /*--------------------------------
-        Product slider active 9
-    -----------------------------------*/
     $('.product-slider-active-9').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -683,16 +599,11 @@
             }
         ]
     });
-    
-    /*------- Color active -----*/
     $('.pro-details-color-content').on('click', 'a', function(e){
         e.preventDefault();
         $(this).addClass('active').parent().siblings().children('a').removeClass('active');
     });
     
-    /*--------------------------------
-        Social icon active
-    -----------------------------------*/
     if ($('.pro-details-action').length) {
         var $body = $('body'),
             $cartWrap = $('.pro-details-action'),
